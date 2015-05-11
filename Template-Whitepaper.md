@@ -17,12 +17,14 @@ NOTE: @ Add your note here
 
 @ Add your content_1 here.
 
+
 @ Add your subtitle_2 here
 ---
 
 @ Add your content_2 here.
 
-Table Style
+
+Table Styles
 ---
 
 <table>
@@ -51,6 +53,7 @@ Table Style
 
 *Table 1 – @ Add your table name here*
 
+
 Hyperlink Style
 ---
 @ Add your [hyperlink](http://blogs.msdn.com/b/visualstudioalmrangers/) here.
@@ -69,46 +72,36 @@ Images Style
 
 *Figure 2 – @ Add image description here*
 
-There are two simple ways of interacting with the namespaces of a Team Foundation Server instance. You can use either the
-[TFSSecurity.exe](http://msdn.microsoft.com/en-us/library/ms252504.aspx) command line utility, or the Team Foundation Server’s **Object Model API**s.
+Text styles
+---
 
-### Interacting with security namespaces using TFSSecurity tool
+@ Here is how you apply **bold** to text.
 
-Microsoft ships the **TFSSecurity.exe** command line tool with both Team Foundation Server and Visual Studio. You can find it in the following default locations for Team Foundation Server 2013 and VS 2013:
+Header styles
+---
 
-```
-Team Foundation Server application tier: %ProgramFiles%\Microsoft Team Foundation Server 12.0\Tools
-Visual Studio: %ProgramFiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE
-```
+# Header 1 - We typcially don't use this style (see '@ Add your Whitepaper title here' above).
+## Header 2 - We typcially don't use this style (see '@ Add your subtitle_1 here' above).
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
 
-You can use the **TFSSecurity.exe** utility to list security namespaces, list the actions, show access control lists and do permission assignments.
+Code Samples
+---
+### @ Add your code sample here
 
-The tool differentiates between the Server-level and Team Project Collection-level namespaces by either accepting a /server or /collection parameter. For example to list all of the Server security namespaces, execute the following command:
-
-```
-Tfssecurity.exe /a /server:http://<<tfsserver>>:8080/tfs
-```
-
-In addition, you can list all the Team Project Collection-level security namespaces by executing the following command:
-
-```
-TFSSecurity.exe /a /collection:http://<<tfsserver>>:8080/tfs/DefaultCollection
-```
-
-### Interacting with security namespaces using TFS OM
-
-You can use The **Team Foundation Server Object Model** (TFS OM) to list the namespaces and actions as well as read the access control lists and do permission assignments. The level of namespaces retrieved depends on the connection type from which you retrieve the security proxy.
-
-For example to get a list of namespaces from a Team Project Collection, use the **TfsTeamProjectCollection** object to establish a connection.
+You can add code samples below:
 
 ```
-var collection = new TfsTeamProjectCollection(
-                         new Uri("http://<<server>>:8080/tfs/DefaultCollection"));
-collection.Authenticate();
+This is a code sample.
+var server = new TfsConfigurationServer (new Uri("http://<<server>>:8080/tfs"));
+server.Authenticate();
 var security   = collection.GetService<ISecurityService>();
 var namespaces = security.GetSecurityNamespaces();
 ```
-*Code 1 - Using TFS OM to query Team Project Collection-level security namespaces*
+
+*Code 1 - @ Add your code sample description here*
 
 To get a list of namespaces from the Server, use the **TfsConfigurationServer** object to establish a connection.
 
@@ -119,12 +112,6 @@ var security   = collection.GetService<ISecurityService>();
 var namespaces = security.GetSecurityNamespaces();
 ```
 *Code 2 - Using TFS OM to query TFS server-level security namespaces*
-
-Once you establish the connection, the convention for listing and interacting with the namespaces is the same; both use the **ISecurityService** proxy interface.
-
-We categorize TFS Security namespaces as **Server-**level and **Team Project Collection**-level. TFS expands the namespaces with the permissions that each namespace supports.
-
-Server-level permissions are not specific to any Team Project Collection or Team Project. TFS enables setting Permissions on a TFS deployment-wide basis and these permissions affect every Team Project and Team Project Collection in the deployment.
 
 Peruse the
 [ISecurityService](http://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.framework.client.isecurityservice.aspx)
