@@ -1,24 +1,22 @@
 ALM RANGERS
  ---
 
-Extract effective permissions from TFS 2013
+@ Add your Whitepaper title here
 ===
 
-Hosam Kamel, Michel Perfetti
+@ Add your authors here
 
-Understanding effective permissions can be daunting in Visual Studio Team Foundation Server (TFS), especially when compliance goals require changes to default security and privileges.
-
-This whitepaper examines permissions in TFS, introduces security management tools, and helps you understand the world of security namespaces. We introduce our research code sample, which you can re-use to extract effective permissions, or customize to meet your needs.
+@ Add your blurb here
 
 This whitepaper covers the following core topics:
 
 ![](media/image1.png)
 
 ---
-NOTE: If you are looking for information on security auditing, then the ***Security auditing in TFS 2013*** paper may be more relevant for you. Please contact the <a href="http://blogs.msdn.com/b/visualstudioalmrangers/">Visual Studio ALM Rangers</a> for details.
+NOTE: @ Add your note here
  ---
 
-Permissions in TFS
+Permissions in TFS 
 ---
 
 Permissions determine the authorization for user actions such as workspace administration and project creation. When you create a Team Project in Team Foundation Server, TFS creates default security groups for the project regardless of your choice of process template. By default, each of these security groups has a set of permissions defined for it and this governs what members of those groups are authorized to do.
