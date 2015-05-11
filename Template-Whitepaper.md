@@ -8,7 +8,7 @@ ALM RANGERS
 
 @ Add your blurb here
 
-This whitepaper covers the following core topics:
+@ Add your image here. Remember to add your image to the 'media' folder under the 'Doc' folder.
 
 ![](media/image1.png)
 
@@ -16,73 +16,42 @@ This whitepaper covers the following core topics:
 NOTE: @ Add your note here
  ---
 
-Permissions in TFS 
+@ Add your subtitle_1 here
 ---
 
-Permissions determine the authorization for user actions such as workspace administration and project creation. When you create a Team Project in Team Foundation Server, TFS creates default security groups for the project regardless of your choice of process template. By default, each of these security groups has a set of permissions defined for it and this governs what members of those groups are authorized to do.
+@ Add your content_1 here.
 
-We integrate Team Foundation Server with SQL Server Reporting Services to provide project-level reports and integrate TFS with SharePoint Server to provide project portals. Because of these integration features, managing permissions in TFS is now distributed across different areas. We need one tool to manage user permissions across these areas.
 
-Team Foundation Server communities, partners, and experts have created various tools to facilitate centralized management of security permissions.
-
-Top 3 tools for security management
+@ Add your subtitle_2 here
 ---
 
-Below, we have summarized security-related features for the top three tools available for managing Team Foundation Server Permissions.
+@ Add your content_2 here.
 
 <table>
   <tr>
-    <th align="left">Tool</th>
-    <th align="left">Author</th>		
-    <th align="left">Description</th>
+    <th align="left">Table Header 1</th>
+    <th align="left">Table Header 2</th>		
+    <th align="left">Table Header 3</th>
   </tr>
   <tr>
-    <td valign="top"><a href="http://teamprojectmanager.codeplex.com/">Team Project Manager</a></td>
-    <td valign="top">Community - CodePlex <a href="http://www.codeplex.com/site/users/view/jelled">jelled</a></td>		
-    <td valign="top">Security object:<ul>
-<li>Tool focused on security groups. Doesn’t manage user permissions</li></ul>
-Security functionality:<ul>
-<li>Understand which members are associated with which security groups</li>
-<li>Delete security groups</li>
-<li>Add or update security groups</li>
-<li>Manage members and permissions for security groups</li></ul>
-</td>
-</tr>
-
-  <tr>
-    <td valign="top"><a href="http://tfsadmin.codeplex.com/">TFS Administration Tool</a></td>
-    <td valign="top">Community- CodePlex <a href="http://www.codeplex.com/site/users/view/gholliday">gholliday</a></td>		
-    <td valign="top">Security object:<ul>
-<li>Manage user permissions on all three platforms: TFS, SharePoint, and SQL Server Reporting Services. </li>
-<li>The tools focused on TFS security groups. </li></ul>
-Security functionality:<ul>
-<li>The TFS Administration Tool allows Team Foundation Server administrators to manage user permissions on all three platforms utilized by Team Foundation Server:</li>
-<li>Team Foundation Server</li>
-<li>SharePoint</li>
-<li>SQL Server Reporting Services</li>
-<li>This tool also allows administrators to copy user permissions among Team Projects and to identify all missing permissions on any of the three platforms.</li></ul>
-</td>
-</tr>
-
-  <tr>
-    <td valign="top"><a href="http://www.attrice.info/downloads/">TFS Sidekicks</a></td>
-    <td valign="top">Attrice Corporation</td>		
-    <td valign="top">Security object:<ul>
-<li>Tool is focused on user permissions</li></ul>
-Security functionality:<ul>
-<li>Review effective permissions for selected user</li>
-<li>View which Team Foundation Server groups the user is a member of (Windows domain groups are not included)</li>
-<li>View a user’s global TFS Server permissions</li>
-<li>View project-specific effective permissions for a selected Team project</li>
-<li>View a user’s Team project’s permissions</li>
-<li>Select a project’s version control folder/file and view effective version control permissions for that item (including an indication of whether permissions are inherited or explicitly set)</li>
-<li>View effective permissions for a selected project’s area</li>
-<li>For each effective permission displayed, view a reason for the effective permission setting – namely, for which groups Allow/Deny permissions are set and therefore what the effective permission is based on</li></ul>
-</td>
-</tr>
+    <td valign="top"><a href="http://teamprojectmanager.codeplex.com/">Column 1 Link 1</a></td>
+    <td valign="top">Column 2</td>		
+    <td valign="top">Column 3 - Heading 1:
+      <ul>
+        <li>Heading 1 - Bullet point 1</li>
+      </ul>
+      Column 3 - Heading 2:
+      <ul>
+        <li>Heading 2 - Bullet point 1</li>
+        <li>Heading 2 - Bullet point 2</li>
+        <li>Heading 2 - Bullet point 3</li>
+        <li>Heading 2 - Bullet point 4</li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
-*Table 1 – Top three tools*
+*Table 1 – @ Add your table name here*
 
 See [Visual Studio ALM Community Widgets](http://aka.ms/widgets) for more tools and widgets.
 
