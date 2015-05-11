@@ -8,10 +8,6 @@ ALM RANGERS
 
 @ Add your blurb here
 
-@ Add your image here. Remember to add your image to the 'media' folder under the 'Doc' folder.
-
-![](media/image1.png)
-
 ---
 NOTE: @ Add your note here
  ---
@@ -21,11 +17,13 @@ NOTE: @ Add your note here
 
 @ Add your content_1 here.
 
-
 @ Add your subtitle_2 here
 ---
 
 @ Add your content_2 here.
+
+Table Style
+---
 
 <table>
   <tr>
@@ -34,7 +32,7 @@ NOTE: @ Add your note here
     <th align="left">Table Header 3</th>
   </tr>
   <tr>
-    <td valign="top"><a href="http://teamprojectmanager.codeplex.com/">Column 1 Link 1</a></td>
+    <td valign="top"><a href="http://blogs.msdn.com/b/visualstudioalmrangers/">Column 1 Link 1</a></td>
     <td valign="top">Column 2</td>		
     <td valign="top">Column 3 - Heading 1:
       <ul>
@@ -53,22 +51,23 @@ NOTE: @ Add your note here
 
 *Table 1 – @ Add your table name here*
 
-See [Visual Studio ALM Community Widgets](http://aka.ms/widgets) for more tools and widgets.
+Hyperlink Style
+---
+@ Add your [hyperlink](http://blogs.msdn.com/b/visualstudioalmrangers/) here.
 
-While these tools provide many great features to facilitate permissions management, there are still some missing features. There is an increasing need for TFS to go beyond ALM. Customers often demand new features, driven by the policies and regulations applicable to their business. One such need customers repeatedly face is to create a comprehensive report, on permissions that a TFS user or security group has in terms of known and accessible security namespaces.
 
-Security namespace
+Images Style
 ---
 
-A security namespace is a container or grouping of security privileges within Team Foundation Server. You manage security assignments and permissions within the scope of a specific namespace. A namespace may be different based on the level or subsystem you are querying. For example, Server level namespaces are different from Team Project Collection level namespaces.
+@ Add your image here. Remember to add your image to the 'media' folder under the 'Doc' folder.
 
-A namespace has security permissions or actions, referring to the action that you can control by allowing or disallowing any members or objects from performing the action. The permissions are generally specific to the namespace, for example on the Web Access Server namespace there is a permission called “Use Full Web Access features” whereas on the Team Project Collection VersionControlItems namespace there is a permission for “Read” or “Check in”.
+![](media/image1.png)
 
-Using the namespace with the list of permissions, you build up access control lists (ACLs) either by inheriting or explicitly allowing or denying the member or object from performing the action.
+*Figure 1 – @ Add image description here*
 
 ![](media/image2.png)
 
-*Figure 1 – High level grouping of namespaces, actions, and member assignments*
+*Figure 2 – @ Add image description here*
 
 There are two simple ways of interacting with the namespaces of a Team Foundation Server instance. You can use either the
 [TFSSecurity.exe](http://msdn.microsoft.com/en-us/library/ms252504.aspx) command line utility, or the Team Foundation Server’s **Object Model API**s.
